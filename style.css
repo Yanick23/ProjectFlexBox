@@ -209,9 +209,10 @@ nav li {
     background-color:#39aae1 ;
 
 }
-.article {
-    min-width: 300px;
+article {
+    min-width: 250px;
     flex: 1;
+    margin-right: 10px;
 }
 article .news_thumbnail{
     margin-top: 30px;
@@ -236,6 +237,12 @@ article .new_resume{
 .widget_body a{
     text-decoration: none;
 
+}
+.Dep{
+    min-width: 130px ;
+    height: 75px;
+    background-color: #36a9e1;
+    margin:10px 10px 0  0;
 }
 
 

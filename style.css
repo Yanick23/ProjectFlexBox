@@ -29,6 +29,7 @@ header .container {
     display: flex;
     max-width: 900px;
     width: 100%;
+   
 
 }
 
@@ -127,12 +128,12 @@ nav li {
 }
 
 .banner_title{
-    font-size: 22px;
+    font-size: 19px;
 }
 .banner_description{
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .banner_btn{
@@ -239,11 +240,151 @@ article .new_resume{
 
 }
 .Dep{
-    min-width: 130px ;
+    flex: 1;
+    min-width: 100px ;
     height: 75px;
     background-color: #36a9e1;
     margin:10px 10px 0  0;
+   
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+    height: auto;
+    
+    
+}
+
+.footer_menu{
+    display: flex;
+    width: 100%;
+    
+}
+.fm_1,.fm_2,.fm_3{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex: 1;
+    padding: 20px;
+    
 }
 
 
+.fm_1{
+    background-color: #39aae1
+    
+
+}
+
+.fm_2{
+    background-color: #0079c7
+
+}
+.fm_3{
+    background-color: #2b4c99
+
+}
+.footer_area {
+    display: flex;
+    width: 100%;
+
+}
+.footer_areaItem{
+    flex: 1;
+
+}
+
+.footer_areaItem .widget_title{
+    color: white;
+}
+
+.menuMoble{
+    display: none;
+    width: 40px;
+    height: 40px;
+  
+}
+.menuMoble .mn-line{
+    width: inherit;
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: #2b4c99;
+}
+
+
+@media (max-width: 600px) {
+header .container{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+    .banner_headline h1{
+        font-size: 45px;
+    
+    }
+    .banner_headline h2{
+        font-size: 17px;
+    
+    }
+
+    .banner_headline{
+        padding: 0 15px;
+    }
+
+    .banner_options{
+        height: auto;
+        flex-direction: column;
+    }
+
+   .widget{
+        padding: 20px;
+    }
+    header{
+        height: auto;
+    }
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+
+    }
+
+    .menuMoble{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer_menu {
+        height: auto;
+        flex-direction: column;
+    }
+  
+
+    
+}
+
+@media (max-width:450px) {
+    #geral .container{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .widget{
+        margin-left: 0px; 
+    }
+    .Dep{
+        min-width: 140px;
+    }
+    
+article {
+    min-width: 250px;
+    flex: 1;
+    margin-right: 0px;
+}
+    
+}
 
